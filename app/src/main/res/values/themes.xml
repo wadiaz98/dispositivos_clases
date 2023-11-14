@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.AsesorJuridicoVirtual" parent="Base.Theme.AsesorJuridicoVirtual" />
+
+    <style name="btn_theme">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/txt_ingresar_btn</item>
+    </style>
 </resources>
