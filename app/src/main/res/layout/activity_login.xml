@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".ui.LoginActivity">
 
     <TextView
         android:id="@+id/textView5"
@@ -16,14 +16,14 @@
         android:text="Ya tienes \n una cuenta?"
         android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_derecho"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.525" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_derecho"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginBottom="15dp"
@@ -45,6 +45,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
+            android:id="@+id/textView_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/oswald"
@@ -52,6 +53,7 @@
             android:textSize="30sp" />
 
         <EditText
+            android:id="@+id/editText_usr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/oswald"
@@ -59,6 +61,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/textView_contra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/oswald"
@@ -76,7 +79,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -86,6 +89,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/textView_registrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -96,6 +100,7 @@
             android:textSize="20dp" />
 
         <TextView
+            android:id="@+id/textView_txtMetodos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -108,7 +113,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imageView_google"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="18dp"
@@ -120,7 +125,7 @@
         app:srcCompat="@drawable/google_300221" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView_facebook"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="140dp"
