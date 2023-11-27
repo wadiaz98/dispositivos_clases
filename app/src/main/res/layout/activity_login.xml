@@ -5,34 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".LoginActivity">
+    tools:context=".ui.LoginActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView_tienescuenta"
+        style="@style/themeTxtViewCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="@font/oswald"
-        android:text="Ya tienes \n una cuenta?"
-        android:textSize="35sp"
+        android:layout_marginStart="16dp"
+        android:text="@string/txtV_cuenta"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.542" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView_derecho"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.802"
         app:srcCompat="@drawable/derecho_log" />
 
     <LinearLayout
@@ -43,91 +39,83 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp">
-
         <TextView
+            android:id="@+id/textView_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/oswald"
-            android:text="Email"
-            android:textSize="30sp" />
-
+            style="@style/themeTxtViexLogin"
+            android:text="@string/txtV_email"
+            />
         <EditText
+            android:id="@+id/editText_usr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/oswald"
-            android:hint="Ingrese su usario o email"
-            android:textSize="20sp" />
-
+            style="@style/themeEtxtLogin"
+            android:hint="@string/etxt_email"
+             />
         <TextView
+            android:id="@+id/textView_contra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/oswald"
-            android:text="Contraseña"
-            android:textSize="30sp" />
+            style="@style/themeTxtViexLogin"
+            android:text="@string/txtV_contraseña"
+            />
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:fontFamily="@font/oswald"
-            android:hint="Ingrese su contraseña"
+            style="@style/themeEtxtLogin"
+            android:hint="@string/etxt_contraseña"
             android:inputType="textPassword"
-            android:textSize="20sp" />
-
+            />
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            style="@style/themeBtnInicio"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:text="@string/txt_ingresar_btn"
             android:textSize="20sp" />
-
         <TextView
+            android:id="@+id/textView_registrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/oswald"
-            android:text="Eres nuevo? Registrate ahora"
+            style="@style/themeTxtViewFot"
+            android:text="@string/txtV_nuevo"
             android:textColor="#5dc1b9"
-            android:textSize="20dp" />
+             />
 
         <TextView
+            android:id="@+id/textView_txtMetodos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/oswald"
-            android:text="&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;Otros métodos&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;"
-            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            style="@style/themeTxtViewFot"
+            android:text="@string/txtV_otros"
             android:textStyle="bold" />
         >
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="18dp"
+        android:id="@+id/imageView_google"
+        style="@style/themeImgFot"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.25"
         app:srcCompat="@drawable/google_300221" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:id="@+id/imageView_facebook"
+        style="@style/themeImgFot"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.285"
         app:srcCompat="@drawable/facebook_5968764" />
 </androidx.constraintlayout.widget.ConstraintLayout>

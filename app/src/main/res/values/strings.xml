@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">AsesorJuridicoVirtual</string>
     <string name="txt_ingresar_btn">Iniciar sesión</string>
+    <string name="txtV_cuenta">Ya tienes \nuna cuenta?</string>
+    <string name="txtV_email">Email</string>
+    <string name="etxt_email">Ingrese su usuario o email</string>
+    <string name="txtV_contraseña">Contraseña</string>
+    <string name="etxt_contraseña">Ingrese su contraseña</string>
+    <string name="txtV_nuevo">Eres nuevo? Registrate ahora</string>
+    <string name="txtV_otros">&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;Otros métodos&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;</string>
+    <string name="txtBnv">%s ,esta es tu dirección IP:</string>
 </resources>
