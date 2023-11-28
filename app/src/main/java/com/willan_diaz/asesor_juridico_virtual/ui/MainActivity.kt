@@ -7,7 +7,6 @@ import com.creative.ipfyandroid.Ipfy
 import com.creative.ipfyandroid.IpfyClass
 import com.willan_diaz.asesor_juridico_virtual.R
 import com.willan_diaz.asesor_juridico_virtual.databinding.ActivityMainBinding
-import com.willan_diaz.asesor_juridico_virtual.logic.login.SingIn
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -16,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         Ipfy.init(this) // this is a context of application
         //or you can also pass IpfyClass type to get either IPv4 address only or universal address IPv4/v6 as

@@ -6,11 +6,11 @@ class DBUsers {
 
     fun getListUsers():List<Users>{
 
-        var usr1 = Users(1, "willan", "willan")
+        var usr1 = Users("willan", "willan",1)
 
-        var usr2 = Users(2, "pablo", "pablo")
+        var usr2 = Users("pablo", "pablo",2)
 
-        var usr3 = Users(3, "luis", "luis")
+        var usr3 = Users("luis", "luis",3)
 
 
         var lstUsers = listOf(usr1,usr2,usr3)
