@@ -19,7 +19,7 @@ class PrincipalActivity : AppCompatActivity() {
             val userId = it?.getInt(Constants.USR_ID)
             if(userId != null){
                 val  user = LoginUseCase().getUserNAme(userId)
-                binding.txtUsrId.text = user.firstName.toString()
+                binding.txtUsrId.text = "Bienvenido " + user.firstName.toString() + " " + user.lastName.toString()
             }
             else{
                 Snackbar.make(binding.txtUsrId,"Ocurrio un error", Snackbar.LENGTH_SHORT).show()

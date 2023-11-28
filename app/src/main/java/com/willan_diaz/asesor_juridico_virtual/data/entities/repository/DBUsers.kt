@@ -6,7 +6,7 @@ class DBUsers {
 
     fun getListUsers():List<Users>{
 
-        var usr1 = Users("willan", "willan",1)
+        var usr1 = Users("willan", "willan",1, "willan", "diaz")
 
         var usr2 = Users("pablo", "pablo",2)
 

@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
             val check = LoginUseCase().checkUserandPassword(binding.editTextUsr.text.toString(),
                 binding.editTextTextPassword.text.toString())
             if(check > 0){
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, PrincipalActivity::class.java)
                 intent.putExtra(Constants.USR_ID, check)
                 startActivity(intent)
             }

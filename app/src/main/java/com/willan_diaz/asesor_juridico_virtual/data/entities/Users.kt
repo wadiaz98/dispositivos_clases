@@ -12,13 +12,15 @@ data class Users (
     :this(userName,password){
         this.userId = userId
     }
-    constructor(id:Int, userName:String?, password:String?, profile:String)
+    constructor(usrId:Int, userName:String?, password:String?, profile:String)
         :this(userName,password){
         this.profile = profile
     }
-       constructor(id:Int, userName:String?, password:String?, firstName:String, lastName:String)
+       constructor( userName:String?, password:String?,userId:Int, firstName:String, lastName:String)
             :this(userName,password){
+        this.userId = userId
         this.firstName = firstName
         this.lastName = lastName
             }
+
 }
